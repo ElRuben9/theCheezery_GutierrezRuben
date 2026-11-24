@@ -1,5 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
+    // AGP 9 ya incluye Kotlin (built-in Kotlin); el plugin kotlin.android del PDF
+    // entra en conflicto con esta versión de AGP, por eso no se aplica.
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -43,6 +46,11 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.material)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    ksp(libs.androidx.room.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)

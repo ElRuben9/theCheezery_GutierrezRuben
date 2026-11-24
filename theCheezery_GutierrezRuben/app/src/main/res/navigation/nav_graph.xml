@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_menu_to_cart"
             app:destination="@id/cartFragment" />
+        <action
+            android:id="@+id/action_menu_to_add_combo"
+            app:destination="@id/addComboFragment" />
     </fragment>
 
     <fragment
@@ -52,4 +55,9 @@
         android:id="@+id/cartFragment"
         android:name="gutierrez.ruben.thecheezery_gutierrezruben.CartFragment"
         android:label="My Order" />
+
+    <fragment
+        android:id="@+id/addComboFragment"
+        android:name="gutierrez.ruben.thecheezery_gutierrezruben.AddComboFragment"
+        android:label="New Combo" />
 </navigation>

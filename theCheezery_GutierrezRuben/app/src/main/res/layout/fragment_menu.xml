@@ -107,13 +107,13 @@
                 android:textColor="@color/white" />
 
             <Button
-                android:id="@+id/button_add_product"
+                android:id="@+id/button_add_combo"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/Very_purple"
-                android:text="Add new product"
+                android:text="Add new combo"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
         </LinearLayout>
